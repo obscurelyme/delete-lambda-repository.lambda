@@ -1,0 +1,5 @@
+services:
+  lambda:
+    build: .
+    ports:
+      - 9000:8080
