@@ -5,6 +5,7 @@
   "module": "dist/index.js",
   "type": "module",
   "scripts": {
+    "start": "docker compose up --build",
     "build": "tsc",
     "clean": "rm -rf dist *.zip",
     "zip": "npm run clean && npm run build && zip -r function.zip .",
