@@ -1,0 +1,22 @@
+{
+  "name": "nodejs-lambda",
+  "version": "1.0.0",
+  "description": "A basic AWS Lambda function for NodeJS",
+  "module": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist *.zip",
+    "zip": "npm run clean && npm run build && zip -r function.zip .",
+    "test": "test"
+  },
+  "author": "obscurelyme",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.145",
+    "@types/node": "^20.17.6"
+  },
+  "dependencies": {
+    "typescript": "^5.6.3"
+  }
+}
