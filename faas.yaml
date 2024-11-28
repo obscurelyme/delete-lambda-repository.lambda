@@ -1,0 +1,3 @@
+function:
+  runtime: nodejs20.x
+  handler: dist/index.handler
